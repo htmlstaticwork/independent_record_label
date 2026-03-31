@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Solace Records Shop</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body class="page-fade">
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
+                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                </svg>
+                SOLACE RECORDS
+            </a>
+            
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="artists.html" class="nav-link">Artists</a></li>
+                <li><a href="releases.html" class="nav-link">Releases</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="ri-sun-line"></i></button>
+                <div class="cart-icon" style="position: relative;">
+                    <a href="cart.html" class="nav-link"><i class="ri-shopping-cart-2-line"></i> <span class="cart-count" style="position: absolute; top: -5px; right: -10px; background: var(--accent); color: white; font-size: 0.6rem; padding: 2px 5px; border-radius: 10px;">2</span></a>
+                </div>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="signup.html" class="btn-primary">Sign Up</a>
+                <button class="mobile-nav-toggle"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="padding-top: 150px;">
+        <div class="container">
+            <h1 class="display-small mb-5 uppercase text-center">CHECKOUT</h1>
+            
+            <div class="row">
+                <!-- Shipping Info -->
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <form class="glass-card p-5">
+                        <div class="row mb-5">
+                            <h5 class="mb-4 col-12 uppercase" style="font-family: var(--font-heading);">1. Contact Information</h5>
+                            <div class="col-12 mb-3">
+                                <input type="email" placeholder="EMAIL ADDRESS" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <h5 class="mb-4 col-12 uppercase" style="font-family: var(--font-heading);">2. Shipping Address</h5>
+                            <div class="col-6 mb-3">
+                                <input type="text" placeholder="FIRST NAME" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <input type="text" placeholder="LAST NAME" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" placeholder="STREET ADDRESS" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                            <div class="col-4 mb-3">
+                                <input type="text" placeholder="CITY" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                            <div class="col-4 mb-3">
+                                <input type="text" placeholder="ZIP CODE" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                            <div class="col-4 mb-3">
+                                <input type="text" placeholder="COUNTRY" class="newsletter-input" style="padding: 15px 0;">
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <h5 class="mb-4 col-12 uppercase" style="font-family: var(--font-heading);">3. Payment Method</h5>
+                            <div class="col-12 mb-3">
+                                <div class="payment-option p-4 border border-secondary mb-3 d-flex justify-content-between align-items-center cursor-pointer">
+                                    <span>CREDIT CARD</span>
+                                    <i class="ri-visa-line"></i>
+                                </div>
+                                <div class="payment-option p-4 border border-secondary mb-3 d-flex justify-content-between align-items-center cursor-pointer">
+                                    <span>PAYPAL</span>
+                                    <i class="ri-paypal-line"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-100">PAY NOW</button>
+                    </form>
+                </div>
+
+                <!-- Summary Sidebar -->
+                <div class="col-lg-5 ps-lg-5">
+                    <div class="order-summary glass-card p-5 sticky-top" style="top: 120px;">
+                        <h5 class="mb-4 uppercase" style="font-family: var(--font-heading);">Your Selection</h5>
+                        
+                            <div class="d-flex mb-4">
+                                <div style="width: 60px; aspect-ratio: 1/1; background: var(--bg-surface);">
+                                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=100" alt="Product">
+                                </div>
+                                <div class="ps-3 flex-1 overflow-hidden">
+                                    <h6 class="uppercase mb-1 small">SOLACE LOGO TEE</h6>
+                                    <p class="text-secondary small">L &times; 1</p>
+                                </div>
+                                <div class="ps-3 text-end small">$45.00</div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div style="width: 60px; aspect-ratio: 1/1; background: var(--bg-surface);">
+                                    <img src="https://images.unsplash.com/photo-1603310360621-7752bc6b0933?q=80&w=100" alt="Product">
+                                </div>
+                                <div class="ps-3 flex-1 overflow-hidden">
+                                    <h6 class="uppercase mb-1 small">GHOST VINYL</h6>
+                                    <p class="text-secondary small">QTY 1</p>
+                                </div>
+                                <div class="ps-3 text-end small">$32.00</div>
+                            </div>
+                        </div>
+
+                        <div class="summary-details border-top pt-4">
+                            <div class="d-flex justify-content-between mb-3 text-secondary uppercase small">
+                                <span>Subtotal</span>
+                                <span>$77.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 text-secondary uppercase small">
+                                <span>Shipping</span>
+                                <span>$12.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mt-4 uppercase" style="font-size: 1.25rem; font-weight: 700;">
+                                <span>Total</span>
+                                <span>$89.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="index.html" class="footer-logo">
+                        <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
+                            <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                            <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                        </svg>
+                        SOLACE RECORDS
+                    </a>
+                    <p class="text-muted" style="max-width: 300px;">Independent record label championing raw talent and unfiltered creative expression.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link me-3"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-spotify-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">LABEL</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="artists.html" class="footer-link">Roster</a>
+                    <a href="releases.html" class="footer-link">Releases</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">SHOP</h5>
+                    <a href="shop.html" class="footer-link">Merch</a>
+                    <a href="shop.html" class="footer-link">Vinyl</a>
+                    <a href="cart.html" class="footer-link">Cart</a>
+                    <a href="contact.html" class="footer-link">Support</a>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="footer-title">LEGAL</h5>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Press</a>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center text-muted small">
+                    &copy; 2026 SOLACE RECORDS. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

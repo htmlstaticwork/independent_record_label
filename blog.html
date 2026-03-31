@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Solace Records Official Feed</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body class="page-fade">
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
+                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                </svg>
+                SOLACE RECORDS
+            </a>
+            
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="artists.html" class="nav-link">Artists</a></li>
+                <li><a href="releases.html" class="nav-link">Releases</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-link" title="Cart">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <button id="rtl-toggle" class="theme-toggle" title="RTL Toggle"><i class="ri-translate-2"></i></button>
+                <button id="theme-toggle" class="theme-toggle" title="Theme Toggle"><i class="ri-sun-line"></i></button>
+                <a href="login.html" class="btn-outline" style="padding: 10px 20px; font-size: 0.8rem;">LOGIN</a>
+                <a href="signup.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">SIGN UP</a>
+                <button class="mobile-nav-toggle"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section-padding text-center" style="padding-top: 150px;">
+        <div class="container">
+            <h1 class="display-medium mb-3">INSIDE <span class="text-accent">SOLACE</span></h1>
+            <p class="text-secondary" style="max-width: 600px; margin: 0 auto;">Artist stories, industry insights, and label updates.</p>
+        </div>
+    </header>
+
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 mb-5">
+                    <article class="blog-card fade-up">
+                        <a href="blog-details.html" class="blog-img-wrapper glass-card overflow-hidden" style="display: block; aspect-ratio: 16/9; background: var(--bg-surface);">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </a>
+                        <div class="blog-info mt-4">
+                            <h6 class="text-accent uppercase small letter-spacing-1 mb-2">INTERVIEW</h6>
+                            <p class="text-secondary small mb-4">Discover the creative process behind 'Ghost in the Machine' and why silence is the loudest instrument.</p>
+                            <a href="blog-details.html" class="btn-outline" style="border: none; padding: 0;">READ STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 mb-5">
+                    <article class="blog-card fade-up">
+                        <a href="blog-details.html" class="blog-img-wrapper glass-card overflow-hidden" style="display: block; aspect-ratio: 16/9; background: var(--bg-surface);">
+                            <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=1000" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </a>
+                        <div class="blog-info mt-4">
+                            <h6 class="text-accent uppercase small letter-spacing-1 mb-2">NEWS</h6>
+                            <h3 class="display-small mb-3" style="font-size: 1.75rem;">SOLACE RECORDS LISBON RESIDENCY ANNOUNCED</h3>
+                            <p class="text-secondary small mb-4">We're taking over Club 22 for a month-long celebration of experimental soundscapes.</p>
+                            <a href="blog-details.html" class="btn-outline" style="border: none; padding: 0;">READ STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 mb-5">
+                    <article class="blog-card fade-up">
+                        <a href="blog-details.html" class="blog-img-wrapper glass-card overflow-hidden" style="display: block; aspect-ratio: 16/9; background: var(--bg-surface);">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </a>
+                        <div class="blog-info mt-4">
+                            <h6 class="text-accent uppercase small letter-spacing-1 mb-2">EQUIPMENT</h6>
+                            <h3 class="display-small mb-3" style="font-size: 1.75rem;">THE ANALOG REVIVAL: WHY VINYL STILL MATTERS</h3>
+                            <p class="text-secondary small mb-4">A deep dive into the resurgence of high-fidelity physical media in a digital-first world.</p>
+                            <a href="blog-details.html" class="btn-outline" style="border: none; padding: 0;">READ STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="col-md-6 mb-5">
+                    <article class="blog-card fade-up">
+                        <a href="blog-details.html" class="blog-img-wrapper glass-card overflow-hidden" style="display: block; aspect-ratio: 16/9; background: var(--bg-surface);">
+                            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1000" alt="Music Studio Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                        </a>
+                        <div class="blog-info mt-4">
+                            <h6 class="text-accent uppercase small letter-spacing-1 mb-2">INDUSTRY</h6>
+                            <h3 class="display-small mb-3" style="font-size: 1.75rem;">NAVIGATING THE STREAMING ERA FOR INDIE ARTISTS</h3>
+                            <p class="text-secondary small mb-4">Practical advice on building a sustainable career without compromising your artistic integrity.</p>
+                            <a href="blog-details.html" class="btn-outline" style="border: none; padding: 0;">READ STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 5 -->
+                <div class="col-md-6 mb-5">
+                    <article class="blog-card fade-up">
+                        <a href="blog-details.html" class="blog-img-wrapper glass-card overflow-hidden" style="display: block; aspect-ratio: 16/9; background: var(--bg-surface);">
+                            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </a>
+                        <div class="blog-info mt-4">
+                            <h6 class="text-accent uppercase small letter-spacing-1 mb-2">PROCESS</h6>
+                            <h3 class="display-small mb-3" style="font-size: 1.75rem;">NEON CULT'S STUDIO SECRETS REVEALED</h3>
+                            <p class="text-secondary small mb-4">Behind the scenes of the 'Synth & Shadows' recording sessions in suburban London.</p>
+                            <a href="blog-details.html" class="btn-outline" style="border: none; padding: 0;">READ STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 6 -->
+                <div class="col-md-6 mb-5">
+                    <article class="blog-card fade-up">
+                        <a href="blog-details.html" class="blog-img-wrapper glass-card overflow-hidden" style="display: block; aspect-ratio: 16/9; background: var(--bg-surface);">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1000" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </a>
+                        <div class="blog-info mt-4">
+                            <h6 class="text-accent uppercase small letter-spacing-1 mb-2">EVENTS</h6>
+                            <h3 class="display-small mb-3" style="font-size: 1.75rem;">SOLACE NIGHTS: TOKYO WAREHOUSE EDITION</h3>
+                            <p class="text-secondary small mb-4">Recapping our most intense subterranean event yet. 12 hours of pure audio-visual immersion.</p>
+                            <a href="blog-details.html" class="btn-outline" style="border: none; padding: 0;">READ STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="index.html" class="nav-logo mb-4">
+                        <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
+                            <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                            <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                        </svg>
+                        SOLACE RECORDS
+                    </a>
+                    <p class="text-muted" style="max-width: 300px;">Independent record label championing raw talent and unfiltered creative expression.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link me-3"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-spotify-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">LABEL</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="artists.html" class="footer-link">Roster</a>
+                    <a href="releases.html" class="footer-link">Releases</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">SHOP</h5>
+                    <a href="shop.html" class="footer-link">Merch</a>
+                    <a href="shop.html" class="footer-link">Vinyl</a>
+                    <a href="cart.html" class="footer-link">Cart</a>
+                    <a href="contact.html" class="footer-link">Support</a>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="footer-title">LEGAL</h5>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Press</a>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center text-muted small">
+                    &copy; 2026 SOLACE RECORDS. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

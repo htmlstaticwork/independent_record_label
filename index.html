@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Record Label | Modern Music Identity</title>
+    <meta name="description"
+        content="Commercial-grade independent record label template focused on artists, releases, and identity.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+
+<body class="page-fade">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-dasharray="2,2" />
+                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none"
+                        stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                    <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none"
+                        stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+                    <circle cx="50" cy="50" r="5" fill="currentColor" />
+                </svg>
+                SOLACE RECORDS
+            </a>
+
+            <ul class="nav-links">
+                <!-- Mobile Only Header -->
+                <div class="mobile-menu-header">
+                    <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
+                        <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                        <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                    </svg>
+                    <span>SOLACE RECORDS</span>
+                </div>
+
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link active">Home <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="artists.html" class="nav-link">Artists</a></li>
+                <li><a href="releases.html" class="nav-link">Releases</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                <!-- Mobile Only Utilities -->
+                <div class="mobile-utility-grid">
+                    <a href="cart.html" class="mobile-util-btn">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <span>Cart</span>
+                    </a>
+                    <div class="mobile-util-btn" id="mobile-rtl-trigger" style="cursor: pointer;">
+                        <i class="ri-translate-2"></i>
+                        <span>RTL</span>
+                    </div>
+                    <div class="mobile-util-btn" id="mobile-theme-trigger" style="cursor: pointer;">
+                        <i class="ri-sun-line"></i>
+                        <span>Theme</span>
+                    </div>
+                </div>
+                <div class="mobile-auth-stack">
+                    <a href="login.html" class="btn-outline">LOGIN</a>
+                    <a href="signup.html" class="btn-primary">SIGN UP</a>
+                </div>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-link" title="Cart">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <button id="rtl-toggle" class="theme-toggle" title="RTL Toggle"><i class="ri-translate-2"></i></button>
+                <button id="theme-toggle" class="theme-toggle" title="Theme Toggle"><i class="ri-sun-line"></i></button>
+                <a href="login.html" class="btn-outline" style="padding: 10px 20px; font-size: 0.8rem;">LOGIN</a>
+                <a href="signup.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">SIGN UP</a>
+                <button class="mobile-nav-toggle"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Redesign (Reference Home-2) -->
+    <header class="hero-v2" style="min-height: 100vh; display: flex; align-items: center; padding-top: 100px; position: relative; overflow: hidden; background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h6 class="text-accent uppercase small letter-spacing-2 mb-3 fade-up">ESTABLISHED — 2026</h6>
+                    <h1 class="display-large uppercase mb-4 fade-up">REDESIGNING <br>THE <span
+                            class="text-outline">SOUND</span></h1>
+                    <p class="text-secondary mb-5 fade-up" style="max-width: 500px; font-size: 1.2rem;">An edgy, modern collective for the soul-driven creators and listeners who demand more from their sonic experience.</p>
+                    <div class="d-flex fade-up">
+                        <a href="releases.html" class="btn-primary" style="margin-right: 15px;">LATEST DROPS</a>
+                        <a href="artists.html" class="btn-outline">MEET THE ROSTER</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-stack position-relative fade-up">
+                        <div class="glass-card p-2" style="border-radius: 12px; overflow: hidden; transform: none;">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200"
+                                alt="Solace Records Studio" style="width: 100%; height: 600px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Visualizer Accent (Retained from Original) -->
+        <div class="player-visualizer d-none d-md-flex"
+            style="position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; align-items: flex-end; gap: 6px; padding: 0 40px; opacity: 0.15; pointer-events: none;">
+            <div class="bar" style="width: 6px; height: 15px; background: var(--accent);"></div>
+            <div class="bar" style="width: 6px; height: 35px; background: var(--accent);"></div>
+            <div class="bar" style="width: 6px; height: 25px; background: var(--accent);"></div>
+            <div class="bar" style="width: 6px; height: 55px; background: var(--accent);"></div>
+            <div class="bar" style="width: 6px; height: 40px; background: var(--accent);"></div>
+            <div class="bar" style="width: 6px; height: 75px; background: var(--accent);"></div>
+        </div>
+    </header>
+
+    <!-- Featured Artist Section -->
+    <section class="section-padding" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="row justify-content-between align-items-end mb-5">
+                <div class="col-md-6">
+                    <h2 class="display-small fade-up">THE <span class="text-accent">ROSTER</span></h2>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="artists.html" class="btn-outline">View All Artists</a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <!-- Artist 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="artist-card fade-up">
+                        <div class="artist-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000"
+                                alt="Artist Portrait" class="artist-img">
+                        </div>
+                        <div class="artist-info">
+                            <h3>VELVET NOISE</h3>
+                            <p class="text-muted">ELECTRONIC / MINIMAL</p>
+                            <a href="artists.html" class="btn-text">EXPLORE <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artist 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="artist-card fade-up">
+                        <div class="artist-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=1000"
+                                alt="Artist Portrait" class="artist-img">
+                        </div>
+                        <div class="artist-info">
+                            <h3>NEON CULT</h3>
+                            <p class="text-muted">SYNTHWAVE / DARKPOP</p>
+                            <a href="artists.html" class="btn-text">EXPLORE <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artist 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="artist-card fade-up">
+                        <div class="artist-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1000"
+                                alt="Artist Portrait" class="artist-img">
+                        </div>
+                        <div class="artist-info">
+                            <h3>ECHO DUST</h3>
+                            <p class="text-muted">LO-FI / AMBIENT</p>
+                            <a href="artists.html" class="btn-text">EXPLORE <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Releases Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="display-small mb-5 text-center">LATEST <span class="text-accent">RELEASES</span></h2>
+
+            <div class="row mt-5">
+                <!-- Release 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="release-card fade-up">
+                        <div class="album-cover-wrapper">
+                            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
+                        </div>
+                        <div class="release-info mt-3">
+                            <h4>GHOST IN THE MACHINE</h4>
+                            <p class="text-muted">VELVET NOISE</p>
+                            <p class="text-accent small">ALBUM OUT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Release 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="release-card fade-up">
+                        <div class="album-cover-wrapper">
+                            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
+                        </div>
+                        <div class="release-info mt-3">
+                            <h4>NEON STREETS</h4>
+                            <p class="text-muted">NEON CULT</p>
+                            <p class="text-accent small">SINGLE OUT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Release 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="release-card fade-up">
+                        <div class="album-cover-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
+                        </div>
+                        <div class="release-info mt-3">
+                            <h4>LOST IN ECHOES</h4>
+                            <p class="text-muted">ECHO DUST</p>
+                            <p class="text-accent small">EP OUT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Release 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="release-card fade-up">
+                        <div class="album-cover-wrapper">
+                            <img src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
+                        </div>
+                        <div class="release-info mt-3">
+                            <h4>STATIC SOUL</h4>
+                            <p class="text-muted">COBALT SKY</p>
+                            <p class="text-accent small">SINGLE OUT NOW</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="releases.html" class="btn-primary">View All Releases</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding"
+        style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <h2 class="display-small mb-5 text-center fade-up uppercase">VOICES OF THE <span
+                    class="text-accent">VOID</span></h2>
+            <div class="row mt-5">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="glass-card p-4 h-100 fade-up">
+                        <div class="d-flex gap-1 mb-4 text-accent">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-secondary italic mb-4">"The only label that truly understands the intersection of
+                            high-fidelity production and experimental art. A creative sanctuary."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div
+                                style="width: 40px; height: 40px; border-radius: 50%; background: var(--border-color); overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=100"
+                                    alt="User">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 small uppercase">Marcus Thorne</h6>
+                                <span class="text-muted" style="font-size: 0.7rem;">AUDIO ENGINEER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="glass-card p-4 h-100 fade-up">
+                        <div class="d-flex gap-1 mb-4 text-accent">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-secondary italic mb-4">"Solace Records isn't just a label; it's a movement. They
+                            give artists the tools to be radical without compromise."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div
+                                style="width: 40px; height: 40px; border-radius: 50%; background: var(--border-color); overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=100"
+                                    alt="User">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 small uppercase">Elena Vance</h6>
+                                <span class="text-muted" style="font-size: 0.7rem;">NEON CULT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="glass-card p-4 h-100 fade-up">
+                        <div class="d-flex gap-1 mb-4 text-accent">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-secondary italic mb-4">"The curation is unmatched. Every release feels like a
+                            collector's item. The vinyl pressings are absolute perfection."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div
+                                style="width: 40px; height: 40px; border-radius: 50%; background: var(--border-color); overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=100"
+                                    alt="User">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 small uppercase">Julian Grey</h6>
+                                <span class="text-muted" style="font-size: 0.7rem;">VINYL COLLECTOR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press & Presence Section -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container text-center">
+            <h6 class="text-accent uppercase small mb-5 fade-up letter-spacing-2">PRESS & PRESENCE</h6>
+            <div class="row align-items-center justify-content-center opacity-50 fade-up gap-5">
+                <div class="col-md-2 col-4">
+                    <h5 class="mb-0 uppercase" style="font-family: var(--font-heading); font-size: 1.2rem;">SONIC <span
+                            style="font-weight: 300;">MAG</span></h5>
+                </div>
+                <div class="col-md-2 col-4">
+                    <h5 class="mb-0 uppercase" style="font-family: var(--font-heading); font-size: 1.2rem;">PITCH<span
+                            style="font-weight: 300;">FORK</span></h5>
+                </div>
+                <div class="col-md-2 col-4">
+                    <h5 class="mb-0 uppercase" style="font-family: var(--font-heading); font-size: 1.2rem;">THE <span
+                            style="font-weight: 300;">WIRE</span></h5>
+                </div>
+                <div class="col-md-2 col-4">
+                    <h5 class="mb-0 uppercase" style="font-family: var(--font-heading); font-size: 1.2rem;">BEAT<span
+                            style="font-weight: 300;">PORT</span></h5>
+                </div>
+                <div class="col-md-2 col-4">
+                    <h5 class="mb-0 uppercase" style="font-family: var(--font-heading); font-size: 1.2rem;">ROLLING<span
+                            style="font-weight: 300;">STONE</span></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section-padding" style="border-top: 1px solid var(--border-color);">
+        <div class="container text-center">
+            <div class="newsletter-wrapper glass-card p-5 fade-up"
+                style="max-width: 800px; margin: 0 auto; border-radius: 20px;">
+                <h2 class="display-medium mb-4 uppercase">JOIN THE <span class="text-accent">VOID</span></h2>
+                <p class="text-secondary mb-5" style="max-width: 500px; margin: 0 auto;">Subscribe for early access to
+                    drops, secret events, and exclusive live sessions.</p>
+                <form class="newsletter-group">
+                    <input type="email" placeholder="YOUR EMAIL ADDRESS" class="newsletter-input">
+                    <button type="submit" class="btn-primary">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="index.html" class="nav-logo mb-4">
+                        <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-dasharray="2,2" />
+                            <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50"
+                                fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                            <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                opacity="0.6" />
+                            <circle cx="50" cy="50" r="5" fill="currentColor" />
+                        </svg>
+                        SOLACE RECORDS
+                    </a>
+                    <p class="text-muted" style="max-width: 300px;">Independent record label championing raw talent and
+                        unfiltered creative expression.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link me-3"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-spotify-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">LABEL</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="artists.html" class="footer-link">Roster</a>
+                    <a href="releases.html" class="footer-link">Releases</a>
+                    <a href="events.html" class="footer-link">Events</a>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">SHOP</h5>
+                    <a href="shop.html" class="footer-link">Merch</a>
+                    <a href="shop.html" class="footer-link">Vinyl</a>
+                    <a href="cart.html" class="footer-link">Cart</a>
+                    <a href="contact.html" class="footer-link">Support</a>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="footer-title">LEGAL</h5>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Press</a>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center text-muted small">
+                    &copy; 2026 SOLACE RECORDS. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/player.js"></script>
+</body>
+
+</html>

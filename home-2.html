@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME 2 | Solace Records Editorial</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+
+<body class="page-fade">
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-dasharray="2,2" />
+                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none"
+                        stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                    <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none"
+                        stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+                    <circle cx="50" cy="50" r="5" fill="currentColor" />
+                </svg>
+                SOLACE RECORDS
+            </a>
+
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link active">Home <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="artists.html" class="nav-link">Artists</a></li>
+                <li><a href="releases.html" class="nav-link">Releases</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-link" title="Cart">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <button id="rtl-toggle" class="theme-toggle" title="RTL Toggle"><i class="ri-translate-2"></i></button>
+                <button id="theme-toggle" class="theme-toggle" title="Theme Toggle"><i class="ri-sun-line"></i></button>
+                <a href="login.html" class="btn-outline" style="padding: 10px 20px; font-size: 0.8rem;">LOGIN</a>
+                <a href="signup.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">SIGN UP</a>
+                <button class="mobile-nav-toggle"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-v2" style="min-height: 100vh; display: flex; align-items: center; padding-top: 100px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h6 class="text-accent uppercase small letter-spacing-2 mb-3 fade-up">CURRENT FOCUS — 2026</h6>
+                    <h1 class="display-large uppercase mb-4 fade-up">BEYOND THE <br>ACOUSTIC <span
+                            class="text-outline">VOID</span></h1>
+                    <p class="text-secondary mb-5 fade-up" style="max-width: 500px; font-size: 1.2rem;">
+                    <div class="d-flex fade-up">
+                        <a href="releases.html" class="btn-primary" style="margin-right: 15px;">EXPLORE RELEASES</a>
+                        <a href="about.html" class="btn-outline">OUR VISION</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-stack position-relative fade-up">
+                        <div class="glass-card p-2" style="border-radius: 12px; overflow: hidden; transform: none;">
+                            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1200"
+                                alt="Solace Records Performance" style="width: 100%; height: 600px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: The Roster (Featured Artist) -->
+    <section class="section-padding" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="artist-reveal glass-card p-3 fade-up" style="border-radius: 8px;">
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000" alt="Artist"
+                            style="width: 100%; height: 600px; object-fit: cover; filter: grayscale(1);">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 mt-5 mt-lg-0">
+                    <h2 class="display-medium mb-4 fade-up">ARTIST <span class="text-accent">ROSTER</span></h2>
+                    <p class="text-secondary mb-5 fade-up">From the subterranean clubs of Berlin to the neon streets of
+                        Tokyo, our artists are rewriting the rules of the underground.</p>
+
+                    <div class="roster-list fade-up">
+                        <div class="roster-item py-4 border-bottom d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 uppercase">VELVET NOISE</h4>
+                        </div>
+                        <div class="roster-item py-4 border-bottom d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 uppercase">NEON CULT</h4>
+                            <span class="text-accent small">SYNTHWAVE</span>
+                        </div>
+                        <div class="roster-item py-4 border-bottom d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 uppercase">SONIC DRIFT</h4>
+                            <span class="text-accent small">EXPERIMENTAL</span>
+                        </div>
+                    </div>
+                    <a href="artists.html" class="btn-text mt-5 d-inline-block fade-up">VIEW ALL ARTISTS <i
+                            class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: New Arrivals (Shop Promo) -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="glass-card p-5 overflow-hidden position-relative fade-up"
+                style="border-radius: 20px; background: linear-gradient(90deg, var(--bg-surface) 0%, transparent 100%);">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 z-index-1">
+                        <h6 class="text-accent uppercase small mb-3">LIMITED DROP</h6>
+                        <h2 class="display-medium mb-4">WEAR THE <br>SOUND.</h2>
+                        <p class="text-secondary mt-3 mb-5" style="max-width: 400px;">Exclusive label apparel and
+                            high-fidelity vinyl pressings. Available until the next frequency shifts.</p>
+                        <a href="shop.html" class="btn-primary">VISIT THE STORE</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="shop-visual d-flex justify-content-center align-items-center"
+                            style="width: 100%; opacity: 0.8; padding: 20px;">
+                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1200"
+                                alt="Merch" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-lg);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Creative Labs (Experience) -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-6">
+                    <h2 class="display-medium uppercase fade-up">STUDIO <span class="text-accent">LABS</span></h2>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="text-secondary fade-up" style="max-width: 400px; margin-left: auto;">Where frequencies are
+                        captured and souls are digitized. Our Lisbon headquarters is open.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                    <div class="lab-card glass-card p-2 fade-up"
+                        style="height: 400px; border-radius: 8px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1500" alt="Studio"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.5);">
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="lab-card glass-card p-2 fade-up"
+                        style="height: 400px; border-radius: 8px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=1200" alt="Tech"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.5);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Editorial (Latest Blog) -->
+    <section class="section-padding" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-accent uppercase small mb-3 fade-up">WORDS & IMAGES</h6>
+                <h2 class="display-medium uppercase fade-up">EDITORIAL</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <div class="blog-preview fade-up">
+                        <div class="blog-art mb-4" style="aspect-ratio: 16/9; overflow: hidden; border-radius: 4px;">
+                            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000"
+                                alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="mb-3 uppercase">THE FUTURE OF VINYL</h4>
+                        <p class="text-secondary small mb-4">Why analog still matters in a digital landscape.</p>
+                        <a href="blog.html" class="btn-text">READ MORE</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="blog-preview fade-up">
+                        <div class="blog-art mb-4" style="aspect-ratio: 16/9; overflow: hidden; border-radius: 4px;">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800"
+                                alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="mb-3 uppercase">LISBON UNDERGROUND</h4>
+                        <p class="text-secondary small mb-4">A guide to the hidden venues of Portugal's capital.</p>
+                        <a href="blog.html" class="btn-text">READ MORE</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="blog-preview fade-up">
+                        <div class="blog-art mb-4" style="aspect-ratio: 16/9; overflow: hidden; border-radius: 4px;">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800"
+                                alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="mb-3 uppercase">SYNTH EVOLUTION</h4>
+                        <p class="text-secondary small mb-4">Breaking down the gear used in 'Ghost in the Machine'.</p>
+                        <a href="blog.html" class="btn-text">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Join the Void (Newsletter) -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="glass-card p-5 fade-up" style="border-radius: 20px; max-width: 800px; margin: 0 auto;">
+                <h2 class="display-small mb-4 uppercase">JOIN THE <span class="text-accent">VOID</span></h2>
+                <p class="text-secondary mb-5">Subscribe for early access to drops, secret events, and exclusive live
+                    sessions.</p>
+                <form class="newsletter-form d-flex gap-2" style="max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="YOUR EMAIL ADDRESS" class="newsletter-input"
+                        style="flex: 1; border: none; border-bottom: 2px solid var(--border-color); background: none; color: white; padding: 15px 0;">
+                    <button class="btn-primary">JOIN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="index.html" class="nav-logo mb-4">
+                        <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-dasharray="2,2" />
+                            <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50"
+                                fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                            <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                opacity="0.6" />
+                            <circle cx="50" cy="50" r="5" fill="currentColor" />
+                        </svg>
+                        SOLACE RECORDS
+                    </a>
+                    <p class="text-muted" style="max-width: 300px;">Independent record label championing raw talent and
+                        unfiltered creative expression.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link me-3"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link me-3"><i class="ri-spotify-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">LABEL</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="artists.html" class="footer-link">Roster</a>
+                    <a href="releases.html" class="footer-link">Releases</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                </div>
+                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                    <h5 class="footer-title">SHOP</h5>
+                    <a href="shop.html" class="footer-link">Merch</a>
+                    <a href="shop.html" class="footer-link">Vinyl</a>
+                    <a href="cart.html" class="footer-link">Cart</a>
+                    <a href="contact.html" class="footer-link">Support</a>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="footer-title">LEGAL</h5>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Press</a>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center text-muted small">
+                    &copy; 2026 SOLACE RECORDS. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl-toggle.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
