@@ -187,8 +187,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const detailTitle = document.querySelector('h1.display-small'); // Product H1
             if (detailTitle) {
-                const breaks = passedTitle.includes(' ') ? passedTitle.replace(' ', '<br>') : passedTitle;
-                detailTitle.innerHTML = breaks;
+                // Safely set text content
+                detailTitle.textContent = passedTitle;
                 document.title = `${passedTitle} | SOLACE RECORDS SHOP`;
             }
 
@@ -238,8 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const detailTitle = document.querySelector('h1.display-medium'); // Release H1
             if (detailTitle) {
-                const breaks = passedTitle.includes(' ') ? passedTitle.replace(' ', '<br>') : passedTitle;
-                detailTitle.innerHTML = breaks;
+                detailTitle.textContent = passedTitle;
                 document.title = `${passedTitle} | ${passedArtist} | SOLACE RECORDS`;
             }
 

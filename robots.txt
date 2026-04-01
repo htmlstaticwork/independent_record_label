@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /login.html
+Disallow: /signup.html
+Disallow: /dashboard.html
+Disallow: /checkout.html
+
+Sitemap: https://htmlstaticwork.github.io/independent_record_label/sitemap.xml
