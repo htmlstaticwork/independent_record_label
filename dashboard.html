@@ -66,7 +66,11 @@
         }
         .nav-sidebar-link:hover, .nav-sidebar-link.active {
             background: var(--accent);
-            color: white;
+            color: white !important;
+        }
+        .nav-sidebar-link.logout-btn {
+            color: var(--accent);
+            border: 1px solid rgba(var(--accent-rgb), 0.2);
         }
         .dashboard-table {
             width: 100%;
@@ -121,7 +125,15 @@
             }
             .dashboard-main {
                 margin-left: 0;
-                padding-top: 100px;
+                padding: 100px 20px 40px;
+                width: 100%;
+                overflow-x: hidden;
+            }
+            .table-responsive {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -20px;
+                padding: 0 20px;
             }
         }
     </style>
@@ -167,7 +179,7 @@
                     <a href="#settings" class="nav-sidebar-link"><i class="ri-settings-3-line"></i> Profile Settings</a>
                 </div>
                 <div class="border-top pt-4">
-                    <a href="login.html" class="nav-sidebar-link" style="color: var(--accent);"><i class="ri-logout-box-r-line"></i> Logout</a>
+                    <a href="login.html" class="nav-sidebar-link logout-btn"><i class="ri-logout-box-r-line"></i> Logout</a>
                 </div>
             </nav>
         </aside>
@@ -219,40 +231,42 @@
                         <h3 class="uppercase mb-0">Release Schedule</h3>
                         <button class="btn-primary" style="padding: 10px 20px; font-size: 0.75rem;">+ SCHEDULE NEW</button>
                     </div>
-                    <table class="dashboard-table">
-                        <thead>
-                            <tr>
-                                <th>TITLE</th>
-                                <th>TYPE</th>
-                                <th>STATUS</th>
-                                <th>DATE</th>
-                                <th>ACTION</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>GHOST IN THE MACHINE</td>
-                                <td>ALBUM</td>
-                                <td><span class="text-accent">LIVE</span></td>
-                                <td>Jan 12, 2026</td>
-                                <td><a href="#" class="text-secondary small">View Analytics</a></td>
-                            </tr>
-                            <tr>
-                                <td>MECHANICAL PULSE</td>
-                                <td>SINGLE</td>
-                                <td class="text-secondary">PROCESSING</td>
-                                <td>April 22, 2026</td>
-                                <td><a href="#" class="text-secondary small">Edit Details</a></td>
-                            </tr>
-                            <tr>
-                                <td>NEON VOID (REMIX)</td>
-                                <td>EP</td>
-                                <td class="text-secondary">DRAFT</td>
-                                <td>TBA</td>
-                                <td><a href="#" class="text-secondary small">Publish</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="dashboard-table">
+                            <thead>
+                                <tr>
+                                    <th>TITLE</th>
+                                    <th>TYPE</th>
+                                    <th>STATUS</th>
+                                    <th>DATE</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GHOST IN THE MACHINE</td>
+                                    <td>ALBUM</td>
+                                    <td><span class="text-accent">LIVE</span></td>
+                                    <td>Jan 12, 2026</td>
+                                    <td><a href="#" class="text-secondary small">View Analytics</a></td>
+                                </tr>
+                                <tr>
+                                    <td>MECHANICAL PULSE</td>
+                                    <td>SINGLE</td>
+                                    <td class="text-secondary">PROCESSING</td>
+                                    <td>April 22, 2026</td>
+                                    <td><a href="#" class="text-secondary small">Edit Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>NEON VOID (REMIX)</td>
+                                    <td>EP</td>
+                                    <td class="text-secondary">DRAFT</td>
+                                    <td>TBA</td>
+                                    <td><a href="#" class="text-secondary small">Publish</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 

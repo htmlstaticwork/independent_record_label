@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
@@ -15,21 +18,39 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
+
 <body class="page-fade">
     <!-- Navbar -->
     <nav class="navbar scrolled">
         <div class="container nav-container">
             <a href="index.html" class="nav-logo">
                 <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
-                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
-                    <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-dasharray="2,2" />
+                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none"
+                        stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                    <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none"
+                        stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+                    <circle cx="50" cy="50" r="5" fill="currentColor" />
                 </svg>
                 SOLACE RECORDS
             </a>
-            
+
             <ul class="nav-links">
+                <!-- Mobile Only Header -->
+                <div class="mobile-menu-header">
+                    <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-dasharray="2,2" />
+                        <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none"
+                            stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                        <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none"
+                            stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+                        <circle cx="50" cy="50" r="5" fill="currentColor" />
+                    </svg>
+                    <span>SOLACE RECORDS</span>
+                </div>
+
                 <li class="dropdown">
                     <a href="index.html" class="nav-link">Home <i class="ri-arrow-down-s-line"></i></a>
                     <ul class="dropdown-menu">
@@ -44,6 +65,26 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                <!-- Mobile Only Utilities -->
+                <div class="mobile-utility-grid">
+                    <a href="cart.html" class="mobile-util-btn">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <span>Cart</span>
+                    </a>
+                    <div class="mobile-util-btn" id="mobile-rtl-trigger" style="cursor: pointer;">
+                        <i class="ri-translate-2"></i>
+                        <span>RTL</span>
+                    </div>
+                    <div class="mobile-util-btn" id="mobile-theme-trigger" style="cursor: pointer;">
+                        <i class="ri-sun-line"></i>
+                        <span>Theme</span>
+                    </div>
+                </div>
+                <div class="mobile-auth-stack">
+                    <a href="login.html" class="btn-outline">LOGIN</a>
+                    <a href="signup.html" class="btn-primary">SIGN UP</a>
+                </div>
             </ul>
 
             <div class="nav-actions">
@@ -63,18 +104,21 @@
     <header class="section-padding text-center" style="padding-top: 150px;">
         <div class="container">
             <h1 class="display-medium mb-3">LATEST <span class="text-accent">RELEASES</span></h1>
-            <p class="text-secondary" style="max-width: 600px; margin: 0 auto;">Fresh sounds from our artists. Stream, buy, and support the movement.</p>
+            <p class="text-secondary" style="max-width: 600px; margin: 0 auto;">Fresh sounds from our artists. Stream,
+                buy, and support the movement.</p>
         </div>
     </header>
 
     <section class="section-padding pt-0">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-12" style="display: flex; gap: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px;">
-                    <button class="btn-text active" style="font-family: var(--font-heading); font-weight: 700; text-transform: uppercase;">All</button>
-                    <button class="btn-text" style="font-family: var(--font-heading); font-weight: 400; text-transform: uppercase; color: var(--secondary);">Albums</button>
-                    <button class="btn-text" style="font-family: var(--font-heading); font-weight: 400; text-transform: uppercase; color: var(--secondary);">Singles</button>
-                    <button class="btn-text" style="font-family: var(--font-heading); font-weight: 400; text-transform: uppercase; color: var(--secondary);">Vinyl</button>
+                <div class="col-12">
+                    <div class="release-filter-nav">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="albums">Albums</button>
+                        <button class="filter-btn" data-filter="singles">Singles</button>
+                        <button class="filter-btn" data-filter="vinyl">Vinyl</button>
+                    </div>
                 </div>
             </div>
 
@@ -83,10 +127,11 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
-                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">GHOST IN THE MACHINE</h4>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">GHOST MACHINE</h4>
                             <p class="text-secondary small">VELVET NOISE</p>
                         </div>
                     </a>
@@ -95,7 +140,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">NEON STREETS</h4>
@@ -107,7 +153,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">LOST IN ECHOES</h4>
@@ -119,7 +166,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">STATIC SOUL</h4>
@@ -131,7 +179,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">ANALOG NIGHTS</h4>
@@ -143,7 +192,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">DEEP STATE</h4>
@@ -155,7 +205,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">VOID RUNNER</h4>
@@ -167,7 +218,8 @@
                 <div class="col-md-3 mb-5">
                     <a href="release-details.html" class="release-card fade-up">
                         <div class="album-cover-wrapper">
-                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1000" alt="Album Art" class="album-cover">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1000"
+                                alt="Album Art" class="album-cover">
                         </div>
                         <div class="release-info mt-3">
                             <h4 style="font-size: 1.1rem; margin-bottom: 5px;">RITUALS</h4>
@@ -183,43 +235,48 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="col-lg-4 col-md-12 mb-5">
                     <a href="index.html" class="nav-logo mb-4">
                         <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
-                            <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                            <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
-                            <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-dasharray="2,2" />
+                            <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50"
+                                fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                            <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                opacity="0.6" />
+                            <circle cx="50" cy="50" r="5" fill="currentColor" />
                         </svg>
                         SOLACE RECORDS
                     </a>
-                    <p class="text-muted" style="max-width: 300px;">Independent record label championing raw talent and unfiltered creative expression.</p>
+                    <p class="text-muted" style="max-width: 400px; line-height: 1.8;">Independent record label
+                        championing raw talent and unfiltered creative expression since 2026.</p>
                     <div class="social-links mt-4">
-                        <a href="#" class="social-link me-3"><i class="ri-instagram-line"></i></a>
-                        <a href="#" class="social-link me-3"><i class="ri-twitter-x-line"></i></a>
-                        <a href="#" class="social-link me-3"><i class="ri-spotify-line"></i></a>
-                        <a href="#" class="social-link"><i class="ri-youtube-line"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link" title="Spotify"><i class="ri-spotify-line"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="ri-youtube-line"></i></a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
                     <h5 class="footer-title">LABEL</h5>
                     <a href="about.html" class="footer-link">About Us</a>
                     <a href="artists.html" class="footer-link">Roster</a>
                     <a href="releases.html" class="footer-link">Releases</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                 </div>
-                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
                     <h5 class="footer-title">SHOP</h5>
                     <a href="shop.html" class="footer-link">Merch</a>
                     <a href="shop.html" class="footer-link">Vinyl</a>
                     <a href="cart.html" class="footer-link">Cart</a>
                     <a href="contact.html" class="footer-link">Support</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-12 mb-4">
                     <h5 class="footer-title">LEGAL</h5>
-                    <a href="#" class="footer-link">Privacy</a>
-                    <a href="#" class="footer-link">Terms</a>
-                    <a href="#" class="footer-link">Press</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Press Inquiries</a>
                 </div>
             </div>
             <div class="row mt-5 pt-4 border-top">
@@ -238,4 +295,5 @@
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

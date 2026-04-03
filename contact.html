@@ -30,6 +30,20 @@
             </a>
             
             <ul class="nav-links">
+                <!-- Mobile Only Header -->
+                <div class="mobile-menu-header">
+                    <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-dasharray="2,2" />
+                        <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none"
+                            stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                        <path d="M35 50C35 58.3 41.7 65 50 65C58.3 65 65 58.3 65 50C65 41.7 58.3 35 50 35" fill="none"
+                            stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+                        <circle cx="50" cy="50" r="5" fill="currentColor" />
+                    </svg>
+                    <span>SOLACE RECORDS</span>
+                </div>
+
                 <li class="dropdown">
                     <a href="index.html" class="nav-link">Home <i class="ri-arrow-down-s-line"></i></a>
                     <ul class="dropdown-menu">
@@ -44,6 +58,26 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                <!-- Mobile Only Utilities -->
+                <div class="mobile-utility-grid">
+                    <a href="cart.html" class="mobile-util-btn">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <span>Cart</span>
+                    </a>
+                    <div class="mobile-util-btn" id="mobile-rtl-trigger" style="cursor: pointer;">
+                        <i class="ri-translate-2"></i>
+                        <span>RTL</span>
+                    </div>
+                    <div class="mobile-util-btn" id="mobile-theme-trigger" style="cursor: pointer;">
+                        <i class="ri-sun-line"></i>
+                        <span>Theme</span>
+                    </div>
+                </div>
+                <div class="mobile-auth-stack">
+                    <a href="login.html" class="btn-outline">LOGIN</a>
+                    <a href="signup.html" class="btn-primary">SIGN UP</a>
+                </div>
             </ul>
 
             <div class="nav-actions">
@@ -143,8 +177,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <a href="index.html" class="footer-logo">
+                <div class="col-lg-4 col-md-12 mb-5">
+                    <a href="index.html" class="nav-logo mb-4">
                         <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
                             <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
@@ -153,33 +187,33 @@
                         </svg>
                         SOLACE RECORDS
                     </a>
-                    <p class="text-muted" style="max-width: 300px;">Independent record label championing raw talent and unfiltered creative expression.</p>
+                    <p class="text-muted" style="max-width: 400px; line-height: 1.8;">Independent record label championing raw talent and unfiltered creative expression since 2026.</p>
                     <div class="social-links mt-4">
-                        <a href="#" class="social-link me-3"><i class="ri-instagram-line"></i></a>
-                        <a href="#" class="social-link me-3"><i class="ri-twitter-x-line"></i></a>
-                        <a href="#" class="social-link me-3"><i class="ri-spotify-line"></i></a>
-                        <a href="#" class="social-link"><i class="ri-youtube-line"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link" title="Spotify"><i class="ri-spotify-line"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="ri-youtube-line"></i></a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
                     <h5 class="footer-title">LABEL</h5>
                     <a href="about.html" class="footer-link">About Us</a>
                     <a href="artists.html" class="footer-link">Roster</a>
                     <a href="releases.html" class="footer-link">Releases</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                 </div>
-                <div class="col-md-3 col-6 mb-5 mb-md-0">
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
                     <h5 class="footer-title">SHOP</h5>
                     <a href="shop.html" class="footer-link">Merch</a>
                     <a href="shop.html" class="footer-link">Vinyl</a>
                     <a href="cart.html" class="footer-link">Cart</a>
                     <a href="contact.html" class="footer-link">Support</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-12 mb-4">
                     <h5 class="footer-title">LEGAL</h5>
-                    <a href="#" class="footer-link">Privacy</a>
-                    <a href="#" class="footer-link">Terms</a>
-                    <a href="#" class="footer-link">Press</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Press Inquiries</a>
                 </div>
             </div>
             <div class="row mt-5 pt-4 border-top">

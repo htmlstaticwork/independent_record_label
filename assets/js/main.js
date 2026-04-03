@@ -59,6 +59,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Shop Mobile Filter Dropdown Toggle
+    const shopFilterToggle = document.getElementById('mobile-filter-toggle');
+    const shopFilterDropdown = document.querySelector('.shop-filter-dropdown');
+    if (shopFilterToggle && shopFilterDropdown) {
+        shopFilterToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            shopFilterDropdown.classList.toggle('active');
+        });
+
+        const filterOptions = shopFilterDropdown.querySelectorAll('.dropdown-menu .filter-btn');
+        const activeLabel = shopFilterDropdown.querySelector('.active-category-label');
+
+        filterOptions.forEach(opt => {
+            opt.addEventListener('click', () => {
+                filterOptions.forEach(btn => btn.classList.remove('active'));
+                opt.classList.add('active');
+                if (activeLabel) {
+                    activeLabel.textContent = opt.textContent.split('(')[0].trim().toUpperCase();
+                }
+                shopFilterDropdown.classList.remove('active');
+            });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!shopFilterDropdown.contains(e.target)) {
+                shopFilterDropdown.classList.remove('active');
+            }
+        });
+    }
+
     // Scroll Navbar Effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
