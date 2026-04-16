@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isRTL) {
         htmlElement.setAttribute('dir', 'rtl');
         htmlElement.classList.add('rtl-mode');
-        if (rtlToggle) rtlToggle.innerHTML = '<i class="ri-translate"></i>';
+        if (rtlToggle) rtlToggle.innerHTML = 'RTL';
     }
 
     if (rtlToggle) {
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 htmlElement.removeAttribute('dir');
                 htmlElement.classList.remove('rtl-mode');
                 localStorage.setItem('rtl-mode', 'false');
-                rtlToggle.innerHTML = '<i class="ri-translate-2"></i>';
+                rtlToggle.innerHTML = 'RTL';
             } else {
                 htmlElement.setAttribute('dir', 'rtl');
                 htmlElement.classList.add('rtl-mode');
                 localStorage.setItem('rtl-mode', 'true');
-                rtlToggle.innerHTML = '<i class="ri-translate"></i>';
+                rtlToggle.innerHTML = 'RTL';
             }
         });
     }
