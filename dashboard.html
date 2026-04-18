@@ -152,10 +152,21 @@
                 </svg>
                 SOLACE RECORDS
             </a>
-            <!-- Mobile Toggle for Dashboard Sidebar -->
-            <button class="mobile-nav-toggle" id="dashboard-mobile-toggle">
-                <i class="ri-menu-4-line"></i>
-            </button>
+            <div class="nav-actions">
+                <div class="artist-header-profile d-flex align-items-center gap-3">
+                    <div class="text-end d-none d-md-block">
+                        <p class="mb-0 small fw-bold uppercase" style="line-height: 1;">Velvet Noise</p>
+                        <p class="mb-0 text-secondary" style="font-size: 0.65rem; text-transform: uppercase;">Artist</p>
+                    </div>
+                    <div style="width: 35px; height: 35px; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--accent); cursor: pointer;" title="Profile Settings">
+                        <img src="assets/img/marcus_thorne.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <!-- Mobile Toggle for Dashboard Sidebar -->
+                <button class="mobile-nav-toggle" id="dashboard-mobile-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -179,6 +190,10 @@
                     <a href="#settings" class="nav-sidebar-link"><i class="ri-settings-3-line"></i> Profile Settings</a>
                 </div>
                 <div class="border-top pt-4">
+                    <div style="display: flex; gap: 30px; margin-bottom: 20px; padding: 0 10px; justify-content: flex-start;">
+                        <button id="rtl-toggle" class="theme-toggle" title="RTL Toggle">RTL</button>
+                        <button id="theme-toggle" class="theme-toggle" title="Theme Toggle"><i class="ri-sun-line"></i></button>
+                    </div>
                     <a href="login.html" class="nav-sidebar-link logout-btn"><i class="ri-logout-box-r-line"></i> Logout</a>
                 </div>
             </nav>

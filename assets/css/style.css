@@ -26,18 +26,18 @@
 }
 
 [data-theme='dark'] {
-    /* Dark Mode Palette (Primary Experience) */
+    /* Dark Mode Palette (Pure Black Background) */
     --primary: #F9FAFB;
     --accent: #F43F5E;
     --accent-rgb: 244, 63, 94;
-    --secondary: #9CA3AF;
-    --bg-primary: #020617;
-    --bg-surface: #0B0F19;
+    --secondary: #D1D5DB; /* Slightly lighter gray for better readability on black */
+    --bg-primary: #000000;
+    --bg-surface: #0A0A0A;
     --text-primary: #F9FAFB;
-    --text-secondary: #9CA3AF;
-    --border-color: #1F2937;
+    --text-secondary: #D1D5DB;
+    --border-color: #1A1A1A;
     
-    --glass-bg: rgba(11, 15, 25, 0.7);
+    --glass-bg: rgba(0, 0, 0, 0.8);
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
@@ -681,6 +681,16 @@ footer {
 .social-links {
     display: flex;
     gap: 15px;
+}
+
+.artist-roster .social-links a {
+    font-size: 1.5rem;
+    transition: var(--transition-fast);
+}
+
+.artist-roster .social-links a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
 }
 
 .social-link {
